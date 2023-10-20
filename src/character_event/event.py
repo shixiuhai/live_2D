@@ -5,8 +5,6 @@ import json
 from src import config
 import asyncio
 
-
-
 class  VTUBE:
     def __init__(self, plugin_info):
         self.plugin_info = plugin_info
@@ -45,7 +43,7 @@ class  VTUBE:
             
 if __name__ == "__main__":
     # 使用示例
-    plugin_info = config.PLUGININFO  # 传入插件信息
+    plugin_info = config.PLUGIN_INFO  # 传入插件信息
     live2D_actions = ['Heart Eyes', 'Eyes Cry', 'Angry Sign', 'Shock Sign', 'Remove Expressions', 'Anim Shake', '']  # 传入动作列表
 
     action_player = VTUBE(plugin_info)
