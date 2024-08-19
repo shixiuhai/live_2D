@@ -20,8 +20,8 @@ class XunFeiTextBot:
         jsoncon["role"] = role
         jsoncon["content"] = content
         self.text.append(jsoncon)
-        if len(self.text)>=6:
-            self.text=self.text[-6::]
+        if len(self.text)>=3:
+            self.text=self.text[-3::]
         return self.text
 
     def getlength(self,text):
